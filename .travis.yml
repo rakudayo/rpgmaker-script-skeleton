@@ -1,9 +1,7 @@
 sudo: false
 language: ruby
 rvm:
-# RMXP & RMVX
-- 1.8.1
-# RMVXA
-- 1.9.2
+- 1.8.1  # For RMXP & RMVX
+- 1.9.2  # For RMVXA
 script:
 - bundle exec rspec --format documentation --color --require spec_helper
